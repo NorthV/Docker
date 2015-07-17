@@ -1,0 +1,15 @@
+db:
+  build: db/
+web:
+  build: web/
+proxy:
+  build: proxy/
+globalproxy:
+  build: globalproxy/
+
+ssh:
+  build: ssh/
+xtrabackup:
+  build: xtrabackup/
+myadmin:
+  build: myadmin/
