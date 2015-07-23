@@ -13,3 +13,6 @@ xtrabackup:
   build: xtrabackup/
 myadmin:
   build: myadmin/
+
+z:
+  build: z/
