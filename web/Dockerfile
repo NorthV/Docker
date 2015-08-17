@@ -20,6 +20,7 @@ RUN apt-get update && apt-get install -y php5-imagick \
     && cp /usr/lib/php5/20131226/imagick.so /usr/local/lib/php/extensions/no-debug-non-zts-20131226/ \
     && cp /etc/php5/mods-available/imagick.ini /usr/local/etc/php/conf.d/ \
     && apt-get autoclean && rm -rf /var/lib/apt/lists/*
+RUN docker-php-ext-install exif
 
 COPY sendmail /bin/sendmail
 RUN chmod +x /bin/sendmail
