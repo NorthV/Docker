@@ -16,3 +16,5 @@ myadmin:
 
 z:
   build: z/
+phpdbg:
+  build: phpdbg/
