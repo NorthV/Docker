@@ -29,3 +29,5 @@ COPY php.ini /usr/local/etc/php/
 COPY apache2/sites /etc/apache2/sites
 
 RUN mkdir -p /var/www/html/default/docs
+RUN mkdir /var/www/logs && chown 33:33 /var/www/logs
+VOLUME /var/www/logs
